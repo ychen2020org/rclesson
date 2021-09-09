@@ -83,7 +83,7 @@ points(interesting_genes[['logFC']],-log10(interesting_genes[['P.Value']]),col='
 #annotation
 gse <- getGEO(filename = "GSE50737_family.soft.gz",destdir = ".")
 id_probe <- gse@gpls$GPL16686@dataTable@table
-head(id_probe)#GB_ACC就是基因的转录本ID号了，它的全称是gene bank accession
+head(id_probe)
 probe2gene <- id_probe[,c(1,6,7)]
 
 
